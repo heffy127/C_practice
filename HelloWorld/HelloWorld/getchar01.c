@@ -2,11 +2,11 @@
 #include <conio.h>
 int main(void)
 {
-	int nAge = 0;
-
-	printf("나이를 입력하세요 : ");
-	scanf_s("%d", &nAge);
-	printf("당신의 나이는 %d입니다.", nAge);
-	
+	printf("문자 4개 입력 : ");
+	char c1 = getchar();
+	char c2 = getchar();
+	char c3 = getchar();
+	char c4 = getchar();
+	printf("%c", c2);
 	return 0;
 } 
