@@ -2,10 +2,15 @@
 #include <conio.h>
 int main(void)
 {
-	int nData = 10;
+	int aList[5] = { 0 };
+	int i = 0;
 
-	printf("%d, %d, %d\n", sizeof(5), sizeof(nData), sizeof(int));
-	printf("%d, %d\n", sizeof('A'), sizeof(char));
+	for (i = 0; i < 5; i++)
+		scanf_s("%d", &aList[i]);
+
+	for (i = 0; i < 5; ++i)
+		printf("%d\n", aList[i]);
 
 	return 0;
+
 } 
