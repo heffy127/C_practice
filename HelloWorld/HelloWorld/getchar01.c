@@ -1,30 +1,18 @@
 #include <stdio.h>
 #include <conio.h>
+#include <stdlib.h>
+#include <string.h>
 
-// 전역변수 선언
-// 이 변수는 모든 함수에서 접근 가능
-int g_nCounter = 0;
-
-void InitCounter(int nData)
-{
-	g_nCounter = nData;
-}
-
-void IncreaseCounter()
-{
-	// 전역변수 g_nCounter의 값을 1 증가시킨다.
-	g_nCounter++;
-}
 
 int main(void)
 {
-	InitCounter(10);
-	printf("%d\n", g_nCounter);
-	IncreaseCounter();
-	printf("%d\n", g_nCounter);
-	IncreaseCounter();
-	printf("%d\n", g_nCounter);
+	char *pszBuffer = NULL, *pszNewBuffer = NULL;
+
+	pszBuffer = (char*)malloc(12);
+	sprintf_s(pszBuffer, "%s", "TestString");
+	printf("[%p] %d %s\n",
+		pszBuffer, _msize(pszBuffer), pszBuffer);
+
 
 	return 0;
-
 }
