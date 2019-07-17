@@ -14,7 +14,7 @@ int GetLength(char *str)
 	{
 		index++;
 	}
-	return index;
+	return index; 
 }
 
 int main(void)

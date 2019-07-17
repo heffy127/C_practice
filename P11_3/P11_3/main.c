@@ -33,5 +33,5 @@ int main(void)
 	printf("%s\n", pszNewBuffer); 
 
 	free(pszNewBuffer);
-	return 0;
+	return 0; 
 }

@@ -33,5 +33,5 @@ int main(void)
 	//	동적 할당 받은 메모리를 해제해주지 않을 경우
 	//	메모리 누수 발생!
 	free(pszData);
-	return 0;
+	return 0; 
 }

@@ -32,7 +32,7 @@ int main(void)
 
 	for (int i = 0; i < num; i++)
 		free(ppstr[i]);
-	free(ppstr);
+	free(ppstr); 
 	
 	return 0;
 }
