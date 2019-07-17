@@ -6,8 +6,13 @@
 
 int main(void)
 {
-	printf("%d\n", TestFunc());
-	printf("%d\n", TestFunc());
-	printf("%d\n", TestFunc());
+	char *pszBuffer = NULL, *pszNewBuffer = NULL;
+
+	pszBuffer = (char*)malloc(12);
+	sprintf_s(pszBuffer, "%s", "TestString");
+	printf("[%p] %d %s\n",
+		pszBuffer, _msize(pszBuffer), pszBuffer);
+
+
 	return 0;
 }
