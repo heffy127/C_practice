@@ -1,0 +1,3 @@
+﻿  main.c
+c:\users\gyfld\source\repos\p12_4\p12_4\main.c(19): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  P12_4.vcxproj -> C:\Users\gyfld\source\repos\P12_4\Debug\P12_4.exe
